@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  max-width: 601px;
+  margin: 0 auto;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main {
+  top: -20px;
+  display: grid;
+  position: relative;
+  z-index: 1;
+  place-content: center;
+  padding-inline: 60px;
+}
+
+.layer {
+  top: -20px;
+  position: relative;
+  z-index: 1;
+}
+
+h1 {
+  font-size: 22.4px;
+}
+
+p {
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.text-event {
+  color: #74787a;
+}
+
+.comentario {
+  color: #74787a;
+  font-size: 14px;
+  margin-top: 10px;
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+.item {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px; 
+}
+
+.item img {
+  margin-top: 40px;
+}
+
+.text-item {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.linha {
+  margin: 0px !important;
+}
+
+.img-footer {
+  margin-bottom: 20px;
+}
+
+.text-footer {
+  text-align: center;
+
+}
+@media screen and (max-width: 500px) {
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 100%; /* Ajuste a largura máxima para ocupar a tela inteira */
+    margin: 0;
+  }
+
+  .main {
+    padding: 20px; /* Adicione algum espaço entre os elementos */
+  }
+
+  .text {
+    text-align: center; /* Centralize o texto */
+  }
+
+  .item {
+    display: block; /* Altere para exibição em bloco */
+  }
+
+  .item img {
+    margin: 20px auto; /* Centralize as imagens */
+  }
+
+  .text-item {
+    font-size: 16px; /* Reduza o tamanho da fonte */
+  }
+
+  .comentario {
+    text-align: center; /* Centralize o comentário */
+    display: block; /* Exiba em bloco */
+    margin: 10px 0; /* Adicione espaço em torno do comentário */
+  }
+
+  .img-footer {
+    margin: 10px auto; /* Centralize a imagem do rodapé */
+  }
+
+  .text-footer {
+    text-align: center; /* Centralize o texto do rodapé */
+  }
+}
