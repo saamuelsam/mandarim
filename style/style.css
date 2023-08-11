@@ -9,6 +9,9 @@ body {
   max-width: 601px;
   margin: 0 auto;
 }
+.imagens{
+  width: 100%
+}
 
 header {
   display: flex;
